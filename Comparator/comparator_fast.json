@@ -1,0 +1,12 @@
+{
+    "challenge_module": "ChallengeFast.Basic",
+    "solution_module": "SolutionFast.Basic",
+    "theorem_names": [
+        "bombieriVinogradov_implies_prime_gap_le_600",
+        "bombieriVinogradov_implies_nth_prime_gap_le_600",
+        "bombieriVinogradov_and_existsEpsCert50_imply_prime_gap_le_246",
+        "bombieriVinogradov_and_existsEpsCert50_imply_nth_prime_gap_le_246"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": true
+}

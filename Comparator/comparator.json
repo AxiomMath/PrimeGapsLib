@@ -1,0 +1,10 @@
+{
+    "challenge_module": "Challenge.Basic",
+    "solution_module": "Solution.Basic",
+    "theorem_names": [
+        "bombieriVinogradov_implies_prime_gap_le_246",
+        "bombieriVinogradov_implies_nth_prime_gap_le_246"
+    ],
+    "permitted_axioms": ["propext", "Quot.sound", "Classical.choice"],
+    "enable_nanoda": true
+}

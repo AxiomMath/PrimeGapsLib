@@ -1,0 +1,51 @@
+name = "PrimeGapsLib"
+version = "0.1.0"
+defaultTargets = ["PrimeGapsCert", "PrimeGapsTheory", "PrimeGaps"]
+lintDriver = "batteries/runLinter"
+
+[leanOptions]
+pp.unicode.fun = true
+autoImplicit = false
+relaxedAutoImplicit = false
+maxSynthPendingDepth = 3
+weak.linter.flexible = true
+weak.linter.mathlibStandardSet = true
+weak.linter.style.header = false
+
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "288f16d9a07189233a9bc5e1c143c38d1f3f4d37"
+
+[[require]]
+name = "PrimeNumberTheoremAnd"
+git = "https://github.com/AxiomMath/PrimeNumberTheoremAnd.git"
+rev = "main"
+
+[[lean_lib]]
+name = "PrimeGapsCert"
+roots = ["PrimeGapsCert"]
+
+[[lean_lib]]
+name = "PrimeGapsTheory"
+roots = ["PrimeGapsTheory"]
+
+[[lean_lib]]
+name = "PrimeGaps"
+roots = ["PrimeGaps"]
+
+## Comparator begins
+
+[[lean_lib]]
+name = "Challenge"
+
+[[lean_lib]]
+name = "Solution"
+
+[[lean_lib]]
+name = "ChallengeFast"
+
+[[lean_lib]]
+name = "SolutionFast"
+
+## Comparator ends
