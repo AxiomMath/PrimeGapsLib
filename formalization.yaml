@@ -6,7 +6,7 @@ project:
   name: "PrimeGapsLib"
   authors: [Evan Chen, Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ken Ono, Ashvin Swaminathan, Jesse Thorner, Yunzhou Xie]
   responsible_maintainers: [Kenny Lau, Ashvin Swaminathan]
-  license: "Apache 2.0"
+  license: "Apache-2.0"
 
 sources:
   - title: "Variants of the Selberg sieve"
@@ -15,32 +15,25 @@ sources:
     type: "article"
     location: "Theorem 4(i)"
     relationship: "formalizes"
-    source_note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
+    note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
   - title: "Small gaps between primes"
     authors: [James Maynard]
     id: "https://doi.org/10.4007/annals.2015.181.1.7"
     type: "article"
     location: "Theorem 1.4, second inequality"
     relationship: "formalizes"
-    source_note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
+    note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
 
 classification:
   arxiv: [math.NT]
+  msc2020: [11N05, 11N35, 11N36, 11P32]  # Based on the MSC classifications of the sources
 
 status:
-  scope: "Developing a consolidated Lean library for results on gaps between primes"
+  scope: "Developing a consolidated Lean library for results on gaps between primes, the flagship result being that the Bombieri-Vinogradov theorem implies that that there are infinitely many pairs of primes separated by no more than 246."
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: [propext, Classical.choice, Quot.sound]
   main_results:
-  - declaration: "bombieriVinogradov_implies_frequently_prime_gap_le_246"
-    file: "PrimeGaps/Bounded246.lean"
-    sorry_count: 0
-    axioms: [propext, Classical.choice, Quot.sound]
-    comparator_config: "Comparator/comparator.json"
-    literature_dependencies:
-    - statement: "The Bombieri-Vinogradov Theorem"
-      source: "Small gaps between primes (p.384)"
   - declaration: "bombieriVinogradov_implies_prime_gap_le_246"
     file: "PrimeGaps/Bounded246.lean"
     sorry_count: 0
