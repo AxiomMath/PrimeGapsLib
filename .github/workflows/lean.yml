@@ -2,8 +2,12 @@ name: Lean
 
 on:
   push:
-    branches: ["main"]
+  pull_request:
   workflow_dispatch:
+
+concurrency:
+  group: ${{ github.ref }}  # Group runs by the ref (branch or PR)
+  cancel-in-progress: true  # Cancel any ongoing runs in the same group
 
 jobs:
   build:
