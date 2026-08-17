@@ -20,7 +20,7 @@ sources:
     id: "https://doi.org/10.4007/annals.2015.181.1.7"
     type: "article"
     location: "Theorem 1.4, second inequality"
-    relationship: "Formalizes, conditional on the Bombieri-Vinogradov Theorem"
+    relationship: "Formalizes the fact that the Bombieri-Vinogradov theorem implies them"
 
 classification:
   arxiv: [math.NT]
@@ -38,7 +38,7 @@ status:
     comparator_config: "Comparator/comparator.json"
     literature_dependencies:
     - statement: "The Bombieri-Vinogradov Theorem"
-      source: "Variants of the Selberg sieve (Theorem 2.3)"
+      source: "Small gaps between primes (p.384)"
   - declaration: "bombieriVinogradov_implies_prime_gap_le_246"
     file: "PrimeGaps/Bounded246.lean"
     sorry_count: 0
@@ -46,7 +46,7 @@ status:
     comparator_config: "Comparator/comparator.json"
     literature_dependencies:
     - statement: "The Bombieri-Vinogradov Theorem"
-      source: "Variants of the Selberg sieve (Theorem 2.3)"
+      source: "Small gaps between primes (p.384)"
   - declaration: "bombieriVinogradov_implies_nth_prime_gap_le_246"
     file: "PrimeGaps/Bounded246.lean"
     sorry_count: 0
@@ -54,7 +54,7 @@ status:
     comparator_config: "Comparator/comparator.json"
     literature_dependencies:
     - statement: "The Bombieri-Vinogradov Theorem"
-      source: "Variants of the Selberg sieve (Theorem 2.3)"
+      source: "Small gaps between primes (p.384)"
 
 automation:
   methods:
