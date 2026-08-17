@@ -1,0 +1,70 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/mathlib-initiative/formalization.yaml/main/schema/formalization.schema.json
+
+version: "v0.4"
+
+project:
+  name: "PrimeGapsLib"
+  authors: [Evan Chen, Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ken Ono, Ashvin Swaminathan, Jesse Thorner, Yunzhou Xie]
+  responsible_maintainers: [Kenny Lau, Ashvin Swaminathan]
+  license: "Apache 2.0"
+
+sources:
+  - title: "Variants of the Selberg sieve"
+    authors: [D. H. J. Polymath]
+    id: "https://doi.org/10.1186/s40687-014-0012-7"
+    type: "article"
+    location: "Theorem 4(i)"
+    relationship: "Formalizes, conditional on the Bombieri-Vinogradov Theorem"
+  - title: "Small gaps between primes"
+    authors: [James Maynard]
+    id: "https://doi.org/10.4007/annals.2015.181.1.7"
+    type: "article"
+    location: "Theorem 1.4, second inequality"
+    relationship: "Formalizes, conditional on the Bombieri-Vinogradov Theorem"
+
+classification:
+  arxiv: [math.NT]
+
+status:
+  scope: "Developing a consolidated Lean library for results on gaps between primes"
+  sorry_count: 0
+  sorry_in_definitions: 0
+  axioms: [propext, Classical.choice, Quot.sound]
+  main_results:
+  - declaration: "bombieriVinogradov_implies_frequently_prime_gap_le_246"
+    file: "PrimeGaps/Bounded246.lean"
+    sorry_count: 0
+    axioms: [propext, Classical.choice, Quot.sound]
+    comparator_config: "Comparator/comparator.json"
+    literature_dependencies:
+    - statement: "The Bombieri-Vinogradov Theorem"
+      source: "Variants of the Selberg sieve (Theorem 2.3)"
+  - declaration: "bombieriVinogradov_implies_prime_gap_le_246"
+    file: "PrimeGaps/Bounded246.lean"
+    sorry_count: 0
+    axioms: [propext, Classical.choice, Quot.sound]
+    comparator_config: "Comparator/comparator.json"
+    literature_dependencies:
+    - statement: "The Bombieri-Vinogradov Theorem"
+      source: "Variants of the Selberg sieve (Theorem 2.3)"
+  - declaration: "bombieriVinogradov_implies_nth_prime_gap_le_246"
+    file: "PrimeGaps/Bounded246.lean"
+    sorry_count: 0
+    axioms: [propext, Classical.choice, Quot.sound]
+    comparator_config: "Comparator/comparator.json"
+    literature_dependencies:
+    - statement: "The Bombieri-Vinogradov Theorem"
+      source: "Variants of the Selberg sieve (Theorem 2.3)"
+
+automation:
+  methods:
+    - method: "autonomous"
+      models: [AxiomProver]
+    - method: "manual"
+  notes: "Foundational definitions formalised manually, some definitions formalised autonomously, most theorems formalised autonomously"
+
+review:
+  status: "internally assessed"
+  reviewers: [Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ashvin Swaminathan, Yunzhou Xie]
+
+acknowledgements: "We acknowledge the dependence of our repository on Alex Kontorovich and Terence Tao's `PrimeNumberTheoremAnd` project."
