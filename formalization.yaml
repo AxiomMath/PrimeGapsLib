@@ -6,7 +6,7 @@ project:
   name: "PrimeGapsLib"
   authors: [Evan Chen, Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ken Ono, Ashvin Swaminathan, Jesse Thorner, Yunzhou Xie]
   responsible_maintainers: [Kenny Lau, Ashvin Swaminathan]
-  license: "Apache 2.0"
+  license: "Apache-2.0"
 
 sources:
   - title: "Variants of the Selberg sieve"
@@ -15,14 +15,14 @@ sources:
     type: "article"
     location: "Theorem 4(i)"
     relationship: "formalizes"
-    source_note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
+    note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
   - title: "Small gaps between primes"
     authors: [James Maynard]
     id: "https://doi.org/10.4007/annals.2015.181.1.7"
     type: "article"
     location: "Theorem 1.4, second inequality"
     relationship: "formalizes"
-    source_note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
+    note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
 
 classification:
   arxiv: [math.NT]
