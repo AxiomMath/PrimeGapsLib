@@ -34,14 +34,6 @@ status:
   sorry_in_definitions: 0
   axioms: [propext, Classical.choice, Quot.sound]
   main_results:
-  - declaration: "bombieriVinogradov_implies_frequently_prime_gap_le_246"
-    file: "PrimeGaps/Bounded246.lean"
-    sorry_count: 0
-    axioms: [propext, Classical.choice, Quot.sound]
-    comparator_config: "Comparator/comparator.json"
-    literature_dependencies:
-    - statement: "The Bombieri-Vinogradov Theorem"
-      source: "Small gaps between primes (p.384)"
   - declaration: "bombieriVinogradov_implies_prime_gap_le_246"
     file: "PrimeGaps/Bounded246.lean"
     sorry_count: 0
