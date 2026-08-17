@@ -29,7 +29,7 @@ classification:
   msc2020: [11N05, 11N35, 11N36, 11P32]  # Based on the MSC classifications of the sources
 
 status:
-  scope: "Developing a consolidated Lean library for results on gaps between primes"
+  scope: "Developing a consolidated Lean library for results on gaps between primes, the flagship result being that the Bombieri-Vinogradov theorem implies that that there are infinitely many pairs of primes separated by no more than 246."
   sorry_count: 0
   sorry_in_definitions: 0
   axioms: [propext, Classical.choice, Quot.sound]
