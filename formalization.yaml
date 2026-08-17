@@ -26,6 +26,7 @@ sources:
 
 classification:
   arxiv: [math.NT]
+  msc2020: [11N05, 11N35, 11N36, 11P32]  # Based on the MSC classifications of the sources
 
 status:
   scope: "Developing a consolidated Lean library for results on gaps between primes"
