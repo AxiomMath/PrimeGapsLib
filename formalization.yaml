@@ -27,8 +27,8 @@ sources:
     id: "https://doi.org/10.4007/annals.2015.181.1.7"
     type: "article"
     location: "Theorem 1.4, second inequality"
-    relationship: "formalizes"
-    note: "Formalises the fact that the Bombieri-Vinogradov theorem implies it"
+    relationship: "background"
+    note: "Along the way to the 246 result, we also formalise the fact that the Bombieri-Vinogradov theorem implies Maynard's 600 bound. However, this is not the primary result of this repository, and is mentioned here purely for completeness."
 
 classification:
   arxiv: [math.NT]
@@ -65,7 +65,28 @@ automation:
   notes: "Foundational definitions formalised manually, some definitions formalised autonomously, most theorems formalised autonomously"
 
 review:
-  status: "internally assessed"
+  status: "self-assessed"
   reviewers: [Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ashvin Swaminathan, Yunzhou Xie]
+  notes: >
+    Foundational definitions underwent multiple rounds of review and modification to ensure reusable
+    and maintainable design. The proof strategy outlined in the blueprint underwent multiple
+    revisions to stay as adjacent as possible to the project dependencies (Mathlib and PNT+). The
+    development of this formalisation took place in a repository internal to Axiom Math.
+    Pull requests to that repository were not typically merged without thorough vetting from the
+    reviewers. Before the contents of the internal repository were moved to this public repository,
+    there were more rounds of code review for both quality and fidelity.
+
+alignment:
+  statements:
+    - source: "Variants of the Selberg sieve (Theorem 4(i))"
+      lean: "bombieriVinogradov_implies_prime_gap_le_246"
+      module: "PrimeGaps.Bounded246"
+      status: "Proved, conditional on the Bombieri-Vinogradov theorem"
+      note: "The primary result of this repository."
+    - source: "Small gaps between primes (Theorem 1.4, second inequality)"
+      lean: "bombieriVinogradov_implies_prime_gap_le_600"
+      module: "PrimeGapsTheory.Endgame.Main"
+      status: "Proved, conditional on the Bombieri-Vinogradov theorem"
+      note: "We proved Maynard's 600 bound along the way to proving Polymath8b's 246 bound."
 
 acknowledgements: "We acknowledge the dependence of our repository on Alex Kontorovich and Terence Tao's `PrimeNumberTheoremAnd` project."
