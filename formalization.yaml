@@ -5,6 +5,12 @@ version: "v0.4"
 project:
   name: "PrimeGapsLib"
   authors: [Evan Chen, Sidharth Hariharan, Kenny Lau, Bhavik Mehta, Ken Ono, Ashvin Swaminathan, Jesse Thorner, Yunzhou Xie]
+  description: >
+    `PrimeGapsLib` is an evolving codebase aimed at housing results about gaps in primes. The
+    flagship result thus far is that pairs of primes are separated by at most 246 infinitely often,
+    conditional on the Bombieri-Vinogradov theorem. The 246 proof was generated collaboratively
+    between human formalisers at Axiom Math and AxiomProver, their in-house theorem proving system.
+    Community feedback and contributions are welcome!
   responsible_maintainers: [Kenny Lau, Ashvin Swaminathan]
   license: "Apache-2.0"
 
